@@ -62,7 +62,7 @@ export default function StepCard({ step, index, isCurrent, onClick }: StepCardPr
             </span>
           )}
         </div>
-        <h3 className="truncate font-display text-base font-semibold lowercase text-white">
+        <h3 className="truncate font-display text-base font-semibold text-white">
           {step.title}
         </h3>
         <span className="text-[11px]" style={{ color: accent }}>

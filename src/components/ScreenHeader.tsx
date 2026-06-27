@@ -28,7 +28,7 @@ export default function ScreenHeader({
           {eyebrow}
         </p>
       )}
-      <h1 className="font-display text-2xl font-bold lowercase leading-tight text-white">
+      <h1 className="font-display text-2xl font-bold leading-tight text-white">
         {title}
       </h1>
       {subtitle && (

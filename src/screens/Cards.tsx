@@ -50,7 +50,7 @@ function Group({ title, hint, color }: { title: string; hint: string; color: str
   return (
     <div className="mb-3 flex items-baseline gap-2">
       <span className="h-2.5 w-2.5 rounded-full" style={{ background: color }} />
-      <h2 className="font-display text-lg font-bold lowercase text-white">{title}</h2>
+      <h2 className="font-display text-lg font-bold text-white">{title}</h2>
       <span className="text-[11px] text-mist">{hint}</span>
     </div>
   )
@@ -81,7 +81,7 @@ function IntentionCardView({
         {card.n}
       </div>
       <div className="min-w-0">
-        <h3 className="font-display text-base font-semibold lowercase text-white">
+        <h3 className="font-display text-base font-semibold text-white">
           {card.title}
         </h3>
         <p className="mt-1 text-sm leading-relaxed text-mist">{card.text}</p>

@@ -59,6 +59,7 @@ export const MINDSET_ORDER: MindsetKey[] = ['aberta', 'agil', 'ativa', 'alinhada
 export const brand = {
   appName: 'Guia do Participante',
   event: 'Hackathon Mentes Inovadoras',
+  appSubtitle: 'Hub de Inovação SSI', // subtítulo curto no topo do app
   hub: 'Hub de Inovação em Saúde Corporativa',
   program: 'Programa Mentes Inovadoras',
   promoters: 'SESI Vida · Sistema FIEMG',

@@ -5,15 +5,13 @@ import StepCard from '../components/StepCard'
 import BrandFooter from '../components/BrandFooter'
 import Logo from '../components/Logo'
 import { brand, home, steps, timelineMarkers } from '../content'
-import type { ScreenId } from '../content'
 import { getCurrentStepId } from '../lib/currentStep'
 
 interface HomeProps {
   onOpenStep: (id: number) => void
-  onNavigate: (id: ScreenId) => void
 }
 
-export default function Home({ onOpenStep, onNavigate }: HomeProps) {
+export default function Home({ onOpenStep }: HomeProps) {
   const currentStepId = getCurrentStepId()
 
   return (
@@ -22,36 +20,20 @@ export default function Home({ onOpenStep, onNavigate }: HomeProps) {
       <div className="mb-5 flex items-center gap-3">
         <Logo size={40} />
         <div className="min-w-0">
-          <p className="truncate font-display text-sm font-bold lowercase text-white">
+          <p className="truncate font-display text-sm font-bold text-white">
             {brand.event}
           </p>
-          <p className="truncate text-[11px] text-mist">{brand.hub}</p>
+          <p className="truncate text-[11px] text-mist">{brand.appSubtitle}</p>
         </div>
       </div>
 
       <GoalBanner />
 
       <div className="mb-5">
-        <h1 className="font-display text-2xl font-bold lowercase leading-tight text-white">
+        <h1 className="font-display text-2xl font-bold leading-tight text-white">
           {home.header}
         </h1>
         <p className="mt-2 text-sm leading-relaxed text-mist">{home.subtext}</p>
-      </div>
-
-      {/* atalhos rápidos */}
-      <div className="mb-5 grid grid-cols-2 gap-3">
-        <QuickLink
-          label="Cartas de intenção"
-          hint="10 cartas que destravam"
-          color="#58BABB"
-          onClick={() => onNavigate('cards')}
-        />
-        <QuickLink
-          label="Usar IA com sabedoria"
-          hint="dicas de bom uso"
-          color="#4BADD4"
-          onClick={() => onNavigate('wisdom')}
-        />
       </div>
 
       {/* linha do tempo */}
@@ -78,33 +60,6 @@ export default function Home({ onOpenStep, onNavigate }: HomeProps) {
   )
 }
 
-function QuickLink({
-  label,
-  hint,
-  color,
-  onClick,
-}: {
-  label: string
-  hint: string
-  color: string
-  onClick: () => void
-}) {
-  return (
-    <motion.button
-      whileTap={{ scale: 0.97 }}
-      onClick={onClick}
-      className="rounded-2xl bg-navy-card p-4 text-left"
-      style={{ boxShadow: `inset 0 0 0 1px ${color}33` }}
-    >
-      <span className="block h-2 w-2 rounded-full" style={{ background: color }} />
-      <span className="mt-2 block font-display text-sm font-semibold lowercase leading-tight text-white">
-        {label}
-      </span>
-      <span className="mt-0.5 block text-[11px] text-mist">{hint}</span>
-    </motion.button>
-  )
-}
-
 function Marker({ label, detail, time }: { label: string; detail: string; time: string }) {
   return (
     <motion.div
@@ -116,7 +71,7 @@ function Marker({ label, detail, time }: { label: string; detail: string; time: 
       <span className="mt-0.5 text-base">{label.toLowerCase().includes('pitch') ? '🎤' : '🍽️'}</span>
       <div className="min-w-0">
         <div className="flex flex-wrap items-baseline gap-x-2">
-          <span className="font-display text-sm font-semibold lowercase text-white">
+          <span className="font-display text-sm font-semibold text-white">
             {label}
           </span>
           <span className="text-[11px] font-medium tabular-nums text-teal">{time}</span>

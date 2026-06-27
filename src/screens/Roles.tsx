@@ -40,7 +40,7 @@ export default function Roles() {
                 {emojiByRole[role.name] ?? '⭐'}
               </span>
               <div className="min-w-0">
-                <h3 className="font-display text-base font-semibold lowercase text-white">
+                <h3 className="font-display text-base font-semibold text-white">
                   {role.name}
                 </h3>
                 <p className="mt-1 text-sm leading-relaxed text-mist">{role.desc}</p>

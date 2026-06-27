@@ -63,7 +63,7 @@ export default function App() {
 
       <AnimatePresence mode="wait">
         <div key={screenKey}>
-          {screen === 'home' && <Home onOpenStep={openStep} onNavigate={navigate} />}
+          {screen === 'home' && <Home onOpenStep={openStep} />}
           {screen === 'step' && activeStep != null && (
             <StepScreen
               stepId={activeStep}

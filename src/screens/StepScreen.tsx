@@ -63,7 +63,7 @@ export default function StepScreen({
             </p>
           </div>
         </div>
-        <h1 className="mt-3 font-display text-2xl font-bold lowercase leading-tight text-white">
+        <h1 className="mt-3 font-display text-2xl font-bold leading-tight text-white">
           {step.title}
         </h1>
       </div>
@@ -213,7 +213,7 @@ function NavStep({
       <span className="text-[10px] uppercase tracking-wide text-mist">
         {dir === 'prev' ? '← Anterior' : 'Próxima →'}
       </span>
-      <span className="mt-0.5 truncate font-display text-xs font-semibold lowercase text-white">
+      <span className="mt-0.5 truncate font-display text-xs font-semibold text-white">
         {step.title}
       </span>
     </button>

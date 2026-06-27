@@ -50,7 +50,7 @@ export default function PromptCard({ prompt, accent, index = 0, onGoToStep }: Pr
           >
             {prompt.stepLabel}
           </button>
-          <h3 className="font-display text-lg font-bold lowercase text-white">
+          <h3 className="font-display text-lg font-bold text-white">
             {prompt.title}
           </h3>
         </div>

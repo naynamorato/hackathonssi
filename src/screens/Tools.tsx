@@ -34,7 +34,7 @@ export default function Tools() {
             >
               <div className="flex items-center justify-between gap-3">
                 <h3
-                  className="font-display text-lg font-bold lowercase"
+                  className="font-display text-lg font-bold"
                   style={{ color: tool.placeholder ? '#C9D2DE' : color }}
                 >
                   {tool.placeholder ? 'espaço livre' : tool.name}
