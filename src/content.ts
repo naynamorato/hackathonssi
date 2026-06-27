@@ -59,13 +59,13 @@ export const MINDSET_ORDER: MindsetKey[] = ['aberta', 'agil', 'ativa', 'alinhada
 export const brand = {
   appName: 'Guia do Participante',
   event: 'Hackathon Mentes Inovadoras',
-  appSubtitle: 'Hub de Inovação SSI', // subtítulo curto no topo do app
+  appSubtitle: 'Hub - Inovação em Saúde Corporativa', // subtítulo curto no topo do app
   hub: 'Hub de Inovação em Saúde Corporativa',
   program: 'Programa Mentes Inovadoras',
   promoters: 'SESI Vida · Sistema FIEMG',
   promoText:
     'Este Hackathon é uma realização do Hub de Inovação em Saúde Corporativa, dentro do programa Mentes Inovadoras, promovido pelo SESI e pelo Sistema FIEMG. O programa nasce para desenvolver uma nova mentalidade de inovação nos profissionais das unidades de Saúde e Segurança, ampliando o olhar para além da rotina operacional e das normas, sem desconsiderá-las.',
-  signature: 'Eu tenho orgulho de ser indústria',
+  signature: 'by VIO FUTURO',
   // COLE AQUI os arquivos/links de logo quando tiver
   logos: [
     { label: 'Logo Mentes Inovadoras · SESI Vida', src: '' },
@@ -190,7 +190,7 @@ export const steps: Step[] = [
   },
   {
     id: 4,
-    title: 'Afinidade e voto',
+    title: 'Priorização ideia',
     time: '10:10',
     duration: '20 min',
     mindset: 'agil',
@@ -479,13 +479,13 @@ export const tools: Tool[] = [
     name: 'Gamma',
     purpose: 'Montar a apresentação do pitch com rapidez',
     when: 'Na etapa 8, para os slides',
-    url: '', // COLE AQUI o link do Gamma
+    url: 'https://gamma.app/',
   },
   {
     name: 'Lovable',
     purpose: 'Criar protótipo de app ou site funcional',
     when: 'Na etapa 5, se a proposta é digital',
-    url: '', // COLE AQUI o link do Lovable
+    url: 'https://lovable.dev/',
   },
   {
     name: 'Ferramenta extra',

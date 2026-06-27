@@ -3,8 +3,8 @@ import Screen from '../components/Screen'
 import GoalBanner from '../components/GoalBanner'
 import StepCard from '../components/StepCard'
 import BrandFooter from '../components/BrandFooter'
-import Logo from '../components/Logo'
 import { brand, home, steps, timelineMarkers } from '../content'
+import logoReduzida from '../assets/LogoReduzida.png'
 import { getCurrentStepId } from '../lib/currentStep'
 
 interface HomeProps {
@@ -18,7 +18,7 @@ export default function Home({ onOpenStep }: HomeProps) {
     <Screen>
       {/* marca no topo */}
       <div className="mb-5 flex items-center gap-3">
-        <Logo size={40} />
+        <img src={logoReduzida} alt={brand.program} className="h-10 w-10 shrink-0" />
         <div className="min-w-0">
           <p className="truncate font-display text-sm font-bold text-white">
             {brand.event}

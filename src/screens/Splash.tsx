@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
-import Logo from '../components/Logo'
 import { brand } from '../content'
+import logoMentesInovadoras from '../assets/LogoMentesInovadoras.png'
 
 /**
  * Tela de abertura: os 4 blocos se montam em animação rápida, comunicando
@@ -15,30 +15,31 @@ export default function Splash({ onEnter }: { onEnter: () => void }) {
       transition={{ duration: 0.5 }}
       onClick={onEnter}
     >
-      <motion.div
-        initial={{ scale: 0.9 }}
-        animate={{ scale: 1 }}
-        transition={{ duration: 0.6, ease: 'easeOut' }}
-      >
-        <Logo size={108} animate />
-      </motion.div>
+      <motion.img
+        src={logoMentesInovadoras}
+        alt={brand.program}
+        initial={{ scale: 0.9, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 0.7, ease: 'easeOut' }}
+        className="w-72 max-w-[80vw]"
+      />
 
-      <motion.h1
+      <motion.p
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.7, duration: 0.5 }}
-        className="mt-7 font-display text-3xl font-bold leading-tight text-white"
+        className="mt-4 font-display text-lg font-semibold text-white"
       >
         {brand.event}
-      </motion.h1>
+      </motion.p>
 
       <motion.p
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.95, duration: 0.5 }}
-        className="mt-2 max-w-xs text-sm text-mist"
+        className="mt-1 max-w-xs text-sm text-mist"
       >
-        {brand.hub}
+        {brand.appName}
       </motion.p>
 
       <motion.button

@@ -1,38 +1,32 @@
 import { brand } from '../content'
-import Logo from './Logo'
+import logoMentesInovadoras from '../assets/LogoMentesInovadoras.png'
+import logoHubSSI from '../assets/logoHubSSI.png'
+import logoFIEMG from '../assets/logoFIEMG.webp'
 
 /**
  * Rodapé de marca. Quem promove: Hub de Inovação em Saúde Corporativa,
  * dentro do programa Mentes Inovadoras (SESI Vida · Sistema FIEMG).
- * Espaço para logos quando os arquivos forem inseridos em content.ts.
  */
 export default function BrandFooter() {
   return (
     <footer className="mt-8 border-t border-white/8 pt-6 text-center">
-      <Logo size={36} className="mx-auto mb-3 opacity-80" />
-      <p className="text-xs font-semibold text-white">{brand.program}</p>
-      <p className="mt-0.5 text-[11px] text-mist">{brand.hub}</p>
-      <p className="mt-0.5 text-[11px] text-mist">{brand.promoters}</p>
+      <img
+        src={logoMentesInovadoras}
+        alt={`${brand.program} · ${brand.promoters}`}
+        className="mx-auto mb-5 w-44 max-w-full"
+      />
 
-      {/* Espaço para logos — preencha brand.logos em content.ts */}
-      <div className="mt-4 flex flex-wrap items-center justify-center gap-2">
-        {brand.logos.map((logo) =>
-          logo.src ? (
-            <img key={logo.label} src={logo.src} alt={logo.label} className="h-8" />
-          ) : (
-            <span
-              key={logo.label}
-              className="rounded-lg border border-dashed border-white/15 px-3 py-1.5 text-[10px] text-mist/70"
-            >
-              {logo.label}
-            </span>
-          ),
-        )}
+      {/* Logos dos promotores */}
+      <div className="flex flex-wrap items-center justify-center gap-5">
+        <img
+          src={logoHubSSI}
+          alt="Hub Inovação em Saúde Corporativa · SESI Vida"
+          className="h-14 max-w-full"
+        />
+        <img src={logoFIEMG} alt="Sistema FIEMG" className="h-10 max-w-full" />
       </div>
 
-      <p className="mt-4 font-display text-[11px] italic text-mist/80">
-        “{brand.signature}”
-      </p>
+      <p className="mt-5 font-display text-[11px] text-mist/80">{brand.signature}</p>
     </footer>
   )
 }
