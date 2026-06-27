@@ -33,10 +33,11 @@ const items: NavItem[] = [
   },
   {
     id: 'tools',
-    label: 'Ferramentas',
+    label: 'Links Úteis',
     icon: (a) => (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-        <path d="M14.5 6.5a3.5 3.5 0 0 0-4.7 4.3l-5 5a1.6 1.6 0 0 0 2.3 2.3l5-5a3.5 3.5 0 0 0 4.3-4.7l-2 2-1.6-1.6 2-2Z" stroke={stroke(a)} strokeWidth="1.8" strokeLinejoin="round" />
+        <path d="M10 14a3.5 3.5 0 0 0 5 0l3-3a3.5 3.5 0 0 0-5-5l-1.5 1.5" stroke={stroke(a)} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M14 10a3.5 3.5 0 0 0-5 0l-3 3a3.5 3.5 0 0 0 5 5l1.5-1.5" stroke={stroke(a)} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     ),
   },
