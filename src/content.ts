@@ -91,9 +91,9 @@ export const goal = {
  * -------------------------------------------------------------------------- */
 
 export const home = {
-  header: 'Tudo começa agora. O palco é de vocês.',
+  header: 'O palco é de vocês!',
   subtext:
-    'Toque em cada etapa para ver o que fazer. Os horários são a sua bússola, não a sua prisão. Se atrasar um pouco, tudo bem: o que importa é chegar lá.',
+    'Toque em cada etapa e siga o fluxo. Os horários orientam, mas o ritmo é de vocês. O que importa é chegar lá.',
 }
 
 export interface TimelineMarker {
