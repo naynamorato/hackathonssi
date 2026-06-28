@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion'
 import { MINDSETS } from '../content'
 import type { Step } from '../content'
-import Logo from './Logo'
 
 interface StepCardProps {
   step: Step
@@ -75,8 +74,6 @@ export default function StepCard({ step, index, isCurrent, onClick }: StepCardPr
           <path d="M9 6l6 6-6 6" stroke="#C9D2DE" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       </span>
-
-      <Logo size={40} watermark className="pointer-events-none absolute -right-1 -top-1" />
     </motion.button>
   )
 }
