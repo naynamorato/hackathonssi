@@ -49,7 +49,7 @@ export default function Splash({ onEnter }: { onEnter: () => void }) {
         onClick={onEnter}
         className="mt-10 min-h-[44px] rounded-2xl bg-teal px-8 py-3 text-sm font-bold text-navy-deep transition-transform active:scale-95"
       >
-        Bora começar
+        Começar
       </motion.button>
 
       <motion.p
